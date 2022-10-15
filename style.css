@@ -1,0 +1,340 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+div.bigContainer {
+  display: grid;
+  grid-template-columns: 15% auto;
+  width: 100vw;
+  height: 97%;
+  background-color: rgb(202, 198, 198);
+}
+
+nav.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 2px solid black;
+  height: 100%;
+  background-color: aliceblue;
+  border-right: 5px solid rgb(211, 211, 211);
+  box-shadow: 4px 0 0 0 black;
+  user-select: none;
+}
+
+div.queue {
+  display: flex;
+  flex-direction: column;
+  font-weight: 50;
+  background-color: rgb(78, 78, 78);
+  border: 2px solid rgb(121, 121, 121);
+  width: 100%;
+  height: 10%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+div.queue#visual {
+  background-color: rgb(99, 99, 99);
+}
+
+div.queue#counseling {
+  background-color: rgb(99, 99, 99);
+  outline: 4px solid red;
+  outline-offset: -12px;
+}
+
+div.queue#imz {
+  background-color: rgb(99, 99, 99);
+}
+
+div.queue#time {
+  height: 4%;
+  background-color: rgb(146, 146, 146);
+  color: black;
+  font-size: 12px;
+  border-bottom: 3px solid rgb(233, 233, 233);
+  border-right: 3px solid rgb(233, 233, 233);
+  box-shadow: 0 2px 0 0 inset black;
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+div.queue.highlighted {
+  box-shadow: 0 0 0 10px aqua inset;
+}
+
+nav.top {
+  background-color: rgb(78, 78, 78);
+  height: 3%;
+}
+
+div.screen {
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+  width: fit-content;
+}
+
+div.smile {
+  display: inline-block;
+  margin-left: 90px;
+  color: white;
+}
+
+div.work {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  width: 100%;
+}
+
+div.ptinfo {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 90%;
+}
+
+div.search {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+div.dob {
+  display: inline-block;
+  font-size: smaller;
+  margin-right: 20px;
+}
+
+input#search-box {
+  width: 40%;
+  height: 45%;
+  border: 1px solid #0b8dff;
+}
+
+button.search-button {
+  height: 35%;
+  font-weight: 700;
+  cursor: pointer;
+  border-color: #0b8dff;
+}
+
+p.name {
+  display: inline-block;
+  font-weight: 550;
+  font-size: larger;
+  margin-left: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+button.profile {
+  width: 5%;
+  position: relative;
+  bottom: 10px;
+  text-align: center;
+  background-color: inherit;
+  cursor: pointer;
+  float: right;
+  align-self: flex-end;
+}
+
+button.profile > img {
+  width: 90%;
+  height: 100%;
+}
+
+div.birth-age {
+  display: flex;
+  font-size: 14px;
+  margin-left: 50px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
+
+p.age {
+  margin-left: 50px;
+}
+
+div.address {
+  margin: 0;
+  margin-left: 50px;
+  font-size: 14px;
+  display: flex;
+}
+
+div.address > * {
+  margin-top: 0;
+}
+
+div.address > pre {
+  font-size: inherit;
+}
+
+section.flex {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 0;
+  gap: 0;
+  font-size: 14px;
+  width: auto;
+  margin-right: 0;
+}
+
+section.flex > * {
+  margin: 0 50px 0;
+}
+
+button.scan {
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  word-wrap: break-word;
+  width: 70%;
+  height: 90%;
+  grid-row: span 3;
+  justify-self: end;
+}
+
+div.cont > * {
+  margin: 0;
+}
+
+div.cont2 > * {
+  margin: 0;
+}
+
+div.cont3 > * {
+  margin: 0;
+}
+
+pre.manually {
+  float: right;
+}
+
+button.third {
+  cursor: pointer;
+  width: 70%;
+  height: 90%;
+  justify-self: end;
+  font-weight: 500;
+}
+
+div.drop-down {
+  grid-column: 2;
+  display: flex;
+}
+
+select#rx {
+  background-color: rgb(179, 179, 179);
+  width: 70%;
+  cursor: pointer;
+}
+
+form.form {
+  display: inline-block;
+  width: 60%;
+}
+
+p.order-info {
+  font-weight: 700;
+  float: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  float: top;
+}
+
+div.pt-info-container {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  margin-right: 0;
+  margin-left: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+pre.col-1 {
+  grid-column: 1;
+  justify-self: end;
+}
+
+pre.col-2 {
+  grid-column: 2;
+}
+
+pre.col-3 {
+  grid-column: 3;
+}
+
+pre.col-4 {
+  grid-column: 4;
+}
+
+pre.col-5,
+button.col-5 {
+  grid-column: 5;
+}
+
+button {
+  background-color: rgb(213, 213, 213);
+  border: rgb(160, 160, 160) 3px solid;
+}
+
+pre.manually {
+  grid-column: 4 / 6;
+  justify-self: end;
+}
+
+pre.date {
+  grid-column: 4 / 6;
+  justify-self: center;
+  padding-right: 10%;
+}
+
+pre.text {
+  grid-column: 3 / 5;
+}
+
+pre {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+fieldset {
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+div#time.queue {
+  cursor: default;
+}

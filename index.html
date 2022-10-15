@@ -1,13 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Connexus</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Connexus</title>
+    <link
+      rel="stylesheet"
+      href="style.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="screen">Drop Off</div>
+      <div class="smile">Smile. Make eye contact. Use the patient's name.</div>
+    </nav>
+    <div class="bigContainer">
+      <nav class="navbar">
+        <div
+          class="queue"
+          id="time"></div>
+        <div
+          id="drop"
+          class="queue">
+          <div><u>D</u>rop-Off</div>
+        </div>
+        <div
+          id="input"
+          class="queue select">
+          <div><u>I</u>nput</div>
+          <div>(0/0/5)</div>
+        </div>
+        <div
+          id="resolution"
+          class="queue select">
+          <div><u>R</u>esolution</div>
+          <div>(0/0/1)</div>
+        </div>
+        <div
+          id="point"
+          class="queue select">
+          <div><u>4</u> Point Check</div>
+          <div>(0/1/4)</div>
+        </div>
+        <div
+          id="fill"
+          class="queue">
+          <div>Fi<u>l</u>l</div>
+          <div>(0/1/8)</div>
+        </div>
+        <div
+          id="visual"
+          class="queue select">
+          <div>Visual Verif<u>y</u></div>
+          <div>(0/0/9)</div>
+        </div>
+        <div
+          id="counseling"
+          class="queue select">
+          <div>Counselin<u>g</u></div>
+          <div>(0/0/13)</div>
+        </div>
+        <div
+          id="imz"
+          class="queue">
+          <div>IMZ</div>
+          <div>(0/0)</div>
+        </div>
+        <div
+          id="action"
+          class="queue">
+          <div>Action Items</div>
+          <div>(F0,E3,T0)</div>
+        </div>
+        <div
+          id="urgent"
+          class="queue">
+          <div>Urg<u>e</u>nt Messages</div>
+          <div>(0)</div>
+        </div>
+        <div
+          id="empty"
+          class="queue">
+          <div></div>
+        </div>
+      </nav>
+      <div class="work">
+        <div class="ptinfo">
+          <div class="search">
+            <div class="dob">DOB/RX Number/Name</div>
+            <input
+              type="text"
+              name="search-box"
+              id="search-box" />
+            <button
+              type="submit"
+              class="search-button">
+              ...
+            </button>
+          </div>
+          <form
+            action="#"
+            method="get">
+            <fieldset>
+              <legend>Patient Information</legend>
+              <section class="flex">
+                <p class="name">Name: Emami, Arya</p>
+                <button
+                  type="submit"
+                  class="profile">
+                  <img
+                    src="/folder.png"
+                    alt="profile" />
+                </button>
+                <div class="birth-age">
+                  <div class="birth">Birth: 12/31/1994</div>
+                  <div class="age">Age: 27 Years</div>
+                </div>
+                <div class="address">
+                  <pre>Address: </pre>
+                  <p>
+                    2301 PEBBLE VALE DR <br />
+                    PLANO TX-75075
+                  </p>
+                </div>
+                <div class="pt-info-container">
+                  <pre class="col-1">Language: </pre>
+                  <pre class="col-2">ENG</pre>
+                  <pre class="comments col-1">Comments: </pre>
+                  <pre class="carrier col-1">Carrier: </pre>
+                  <pre class="col-2">MER</pre>
+                  <pre class="card col-3">Card Id: </pre>
+                  <pre class="col-4">446890000000000</pre>
+                  <pre class="plan-name col-1">PlanName: </pre>
+                  <pre class="col-2">MERCK MEDCO/PAID    ...</pre>
+                  <button
+                    type="submit"
+                    class="scan col-5">
+                    <u>S</u>can New RX
+                  </button>
+                  <pre class="phone col-1">Phone: </pre>
+                  <pre class="col-2">(972)244-6722</pre>
+                  <pre class="allergies col-1">Allergies: </pre>
+                  <pre class="col-2">No Known Allergies</pre>
+                  <pre class="messaging col-1">Messaging: </pre>
+                  <pre class="col-2">(972)244-6722</pre>
+                  <pre class="col-3 text">Enrolled (Text)</pre>
+                  <button
+                    type="submit"
+                    class="third col-5">
+                    <u>T</u>hird Party
+                  </button>
+                  <pre class="safety col-1">Non-Safety Caps: </pre>
+                  <pre class="col-2">Not Enrolled</pre>
+                  <pre class="manually col-4">Last Updated Manually on </pre>
+                  <pre class="easy-pay col-1">Easy Pay: </pre>
+                  <pre class="col-4 date">03/10/2022</pre>
+                  <pre class="mail-out col-1">Mail Out: </pre>
+                  <pre class="col-2">NEVER</pre>
+                </div>
+              </section>
+            </fieldset>
+          </form>
+        </div>
+        <div class="drop-down">
+          <form
+            class="form"
+            action="#"
+            method="post">
+            <label for="RX">Order Type</label>
+            <select
+              name="rx"
+              id="rx"
+              title="rx">
+              <option value="">Prescription Drop Off</option>
+              <option value="">Naloxone Drop Off</option>
+              <option value="">Immunization In-Store</option>
+              <option value="">Immunization Event</option>
+            </select>
+          </form>
+          <p class="order-info">Order Information</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
 </html>
